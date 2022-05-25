@@ -6,7 +6,6 @@
   box-sizing: border-box;
   -webkit-user-select: none;
   -webkit-user-drag: none;
-  -webkit-app-region: none;
 }
 
 body {
@@ -21,7 +20,6 @@ body {
 .container {
   height: auto;
   width: 40vw;
-  border-radius: none;
   padding: 1rem;
 }
 
