@@ -1,39 +1,65 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #fff;
+  display: grid;
+  place-content: center;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  height: auto;
+  width: 40vw;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.result {
+  grid-column: 1 / -1;
+  background: #858694;
+  color: #fff;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+  background-color: #e0e0e0;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to
- {
-    transform: rotate(360deg);
-  }
+.btn {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  border: solid 1px #bababa;
+  padding: 1.5rem;
+}
+
+.btn:hover {
+  background-color: rgb(51, 40, 40);
+  color: #fff;
+}
+
+.orange {
+  background: #f5913e;
+}
+
+.zero {
+  grid-column: span 2;
 }
