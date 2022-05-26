@@ -1,32 +1,41 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Math-Magician
+
 A web App to carryout basic math utilities
 
 ## Built With
 
-- HTML, CSS and Javascript
-
+- HTML,
+- CSS
+- Javascript
+- React
 
 ## Getting Started
 
-You can have a copy of this repo run on your local machine by just directly cloning it.
+To get a local copy up and running follow these simple example steps:
+
+- Copy this link `https://github.com/gids-dadi/math-magician`
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone https://github.com/gids-dadi/math-magician`
+- Go to the repository folder in your command prompt `cd math-magician`.
+- Run `npm install` to install the dev dependencies for linters.
 
 ### Prerequisites
 
+Node
+npm
 To get the output of our project make sure you have google Chrome, Mozila or any other browser installed.
-
-### Usage
-
-Double click on the file index.html
 
 ## Authors
 
-👤 Gideon Dadi 
+👤 Gideon Dadi
 
--Linkedin [@GideonDadi] (https://www.linkedin.com/feed/) 
-- GitHub: [@gids_dadi](https://github.com/gids-dadi) 
-- Twitter: [@Dadi_AG](https://twitter.com/Dadi_AG) 
+-Linkedin [@GideonDadi] (https://www.linkedin.com/feed/)
+
+- GitHub: [@gids_dadi](https://github.com/gids-dadi)
+- Twitter: [@Dadi_AG](https://twitter.com/Dadi_AG)
 
 ## Show your support
 
