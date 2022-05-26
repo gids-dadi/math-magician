@@ -4,10 +4,15 @@ import './App.css';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {}
+    }
+
   render() {
     return (
       <div className="App">
-        <Calculator />
+        <Calculator className = "calculate" />
       </div>
     );
   }

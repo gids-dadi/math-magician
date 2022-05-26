@@ -1,34 +1,93 @@
 import React, { Component } from 'react';
+import calculate from './logic/calculate';
+import './Calculator.css';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(btn) {
+    const btnValue = btn.target.textContent;
+    this.setState((e) => calculate(e, btnValue));
+  }
+
   render() {
+    const { total, next, operation } = this.state;
     return (
-      <div className="container">
-        <div className="wrapper">
-          <div className="result">0</div>
-          {/* Row 1 */}
-          <div className="btn"> AC</div>
-          <div className="btn"> +/-</div>
-          <div className="btn"> %</div>
-          <div className="btn orange">/</div>
-          {/* Row 2 */}
-          <div className="btn">7 </div>
-          <div className="btn">8 </div>
-          <div className="btn">9 </div>
-          <div className="btn orange">x</div>
-          {/* Row 3 */}
-          <div className="btn">4</div>
-          <div className="btn">5 </div>
-          <div className="btn">6 </div>
-          <div className="btn orange">-</div>
-          {/* Row 4 */}
-          <div className="btn zero">0 </div>
-          <div className="btn">.</div>
-          <div className="btn orange">=</div>
+      <div className='container'>
+        <div className='screen'>
+          {total}
+          {operation}
+          {next}
         </div>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          AC
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          +/-
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          %
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn orange'>
+          ÷
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          7
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          8
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          9
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn orange'>
+          x
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          4
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          5
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          6
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn orange'>
+          -
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          1
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          2
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          3
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn orange'>
+          +
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn zero'>
+          0
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn'>
+          .
+        </button>
+        <button type='button' onClick={this.handleClick} className='btn orange'>
+          =
+        </button>
       </div>
     );
   }
 }
+
 export default Calculator;
