@@ -1,31 +1,28 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from './logic/calculate';
 import './Calculator.css';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+const Calculator = () => {
+ const stateObj =  {
       total: 0,
       next: null,
       operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+  };
+
+const [ properties, setProperties ] = useState(stateObj);
 
   handleClick(btn) {
     const btnValue = btn.target.textContent;
-    this.setState((e) => calculate(e, btnValue));
-  }
+    const newProperties = { ...properties };
+    setProperties(calculate(newProperties, btnValue));
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
     return (
       <div className="container">
         <div className="screen">
-          {total}
-          {operation}
-          {next}
+          {properties.total}
+          {properties.operation}
+          {properties.next}
         </div>
         <button type="button" onClick={this.handleClick} className="btn">
           AC
@@ -86,7 +83,6 @@ class Calculator extends Component {
         </button>
       </div>
     );
-  }
 }
 
 export default Calculator;
