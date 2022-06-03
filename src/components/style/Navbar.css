@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #219ebc;
+  padding: 15px 0;
+}
+
+.header {
+  margin: auto 30px;
+  color: #ffb703;
+  font-size: 25px;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+}
+
+.ul a {
+  text-decoration: none;
+  color: #ffb703;
+  margin: auto 30px;
+  font-size: 20px;
+}

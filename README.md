@@ -33,7 +33,6 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 👤 Gideon Dadi
 
 -Linkedin [@GideonDadi] (https://www.linkedin.com/feed/)
-
 - GitHub: [@gids_dadi](https://github.com/gids-dadi)
 - Twitter: [@Dadi_AG](https://twitter.com/Dadi_AG)
 

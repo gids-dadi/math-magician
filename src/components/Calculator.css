@@ -1,5 +1,17 @@
+.nav-container {
+  width: 98vw;
+}
+
+.calculator {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container {
-  width: 30vw;
+  width: 40vw;
   height: auto;
   background-color: grey;
   display: grid;
