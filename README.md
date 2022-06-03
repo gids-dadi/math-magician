@@ -28,6 +28,12 @@ Node
 npm
 To get the output of our project make sure you have google Chrome, Mozila or any other browser installed.
 
+##Live demo
+  [@Netlify](https://resonant-gnome-070c4f.netlify.app/)
+  [@Heroku](https://gids-math-magician.herokuapp.com/)
+
+
+
 ## Authors
 
 👤 Gideon Dadi
