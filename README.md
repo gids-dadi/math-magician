@@ -2,7 +2,7 @@
 
 ## Math-Magician
 
-A web App to carryout basic math utilities
+A web App to carry out basic math utilities - comprises a calculator and a quote page by a famous mathematician.
 
 ## Built With
 
